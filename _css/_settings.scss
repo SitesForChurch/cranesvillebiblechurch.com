@@ -39,8 +39,8 @@
 //  34. Title Bar
 //  35. Tooltip
 //  36. Top Bar
-
-@import 'foundation-sites/scss/util/util';
+@import 'https://fonts.googleapis.com/css?family=Martel';
+@import '../bower_components/foundation-sites/scss/util/util';
 
 // 1. Global
 // ---------
@@ -49,26 +49,26 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #4a90e2,
-  secondary: #27213C,
-  success: #ff220c,
-  warning: #ff220c,
-  alert: #1F1F15,
+  primary: #319827,
+  secondary: #5C3F23,
+  success: #3C6E71,
+  warning: #4B4E6D,
+  alert: #319827,
 );
-$main-color: #4a90e2;
-$secondary-color: #27213C;
-$bold-color: #ff220c;
-$subtle-color: #303633;
+$main-color: #319827;
+$primary-color: $main-color !global;
+$secondary-color: #5C3F23 !global;
+$bold-color: #3C6E71;
+$subtle-color: #4B4E6D;
 $text-color: #1F1F15;
 $light-gray: #e6e6e6;
 $medium-gray: #303633;
 $dark-gray: #0e0b08;
 $black: #0e0b08;
-$white: #fefefe;
+$white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Open Sans', sans-serif;
-// $body-font-family: 'Gentium Basic', serif;
+$body-font-family:'Martel', serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -108,11 +108,9 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family:'Open Sans', sans-serif;
+$header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
-$sans-serif: $header-font-family;
-$serif: $body-font-family;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (

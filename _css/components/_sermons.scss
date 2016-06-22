@@ -21,11 +21,6 @@ h2 {
 }
 .sermonslistContent__MainList {
     @include grid-column(12);
-
-    h2 {
-        text-align: center;
-        margin-top: 30px;
-    }
 }
 
 
@@ -54,7 +49,31 @@ h2 {
         @include grid-column(8);
     }
 }
+.sermonslistItem__title {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+    width: inherit;
+ }
+ ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 
+ }
+ li a {
+    margin-bottom: 0;
+    margin-top: .4em;
+    display: block;
+    width: 40px;
+ }
+ li a i {
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+}
 
 
 
@@ -65,7 +84,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: 1px solid $success-color;
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
@@ -76,8 +95,8 @@ h2 {
     margin-top: 30px;
     h3 {
         font-size: 25px;
-        border-bottom: 1px solid $main-color;
-        color: $main-color;
+        border-bottom: 1px solid $primary-color;
+        color: $primary-color;
     }
     ul {
         @include menu-base;
@@ -111,30 +130,31 @@ h2 {
 }
 
 .singleSermonHeader__teaser {
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: 1px solid $success-color;
 
     .singleSermonHeader__title{
         display: flex;
-    justify-content: space-between;
-    h3 {
-    font-size: 30px;
-    margin-bottom: 0;
-    flex-grow: 2;
- }
- ul.action__buttons {
-     list-style-type: none;
-     display: flex;
- }
- li a {
-    margin-bottom: 0;
-    margin-top: .4em;
-    display: block;
-    width: 40px;
- }
- li a i {
-    font-size: 30px;
-    margin-bottom: 0;
- }
+        justify-content: space-between;
+        h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+        width: inherit;
+     }
+     ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+     }
+     li a {
+        margin-bottom: 0;
+        margin-top: .4em;
+        display: block;
+        width: 40px;
+     }
+     li a i {
+        font-size: 30px;
+        margin-bottom: 0;
+     }
 
 }
 .singleSermonHeader__tagline {
@@ -144,7 +164,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: 1px solid $success-color;
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
@@ -152,11 +172,11 @@ h2 {
 }
 }
 .singleSermonContent {
-@include grid-column(10);
-@include grid-column-offset(1);
+@include grid-column(8);
+@include grid-column-offset(2);
 padding-top: 30px;
 padding-bottom: 30px;
-border-bottom: 1px solid $secondary-color;
+border-bottom: 1px solid $success-color;
 margin-bottom: 30px;
 
 }
@@ -175,8 +195,6 @@ margin-bottom: 30px;
     }
 }
 
-
-
 // Single Series Page Styles
 
 .singleSeriesHeader {
@@ -188,7 +206,7 @@ margin-bottom: 30px;
     text-align: center;
     margin-top: 40px;
     font-weight: bold;
-    color: $subtle-color;
+    color: $secondary-color;
 }
 .singleSeriesHeader__mainImage {
     margin-top: 40px;
@@ -196,30 +214,31 @@ margin-bottom: 30px;
 }
 
 .singleSeriesHeader__teaser {
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: 1px solid $success-color;
 
-.singleSeriesHeader__title{
-           display: flex;
-    justify-content: space-between;
-    h3 {
-    font-size: 30px;
-    margin-bottom: 0;
-    flex-grow: 2;
- }
- ul.action__buttons {
-     list-style-type: none;
-     display: flex;
- }
- li a {
-    margin-bottom: 0;
-    margin-top: .4em;
-    display: block;
-    width: 40px;
- }
- li a i {
-    font-size: 30px;
-    margin-bottom: 0;
- }
+    .singleSeriesHeader__title{
+        display: flex;
+        justify-content: space-between;
+        h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+        width: inherit;
+     }
+     ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+     }
+     li a {
+        margin-bottom: 0;
+        margin-top: .4em;
+        display: block;
+        width: 40px;
+     }
+     li a i {
+        font-size: 30px;
+        margin-bottom: 0;
+     }
 
 }
 .singleSeriesHeader__tagline {
@@ -229,7 +248,7 @@ margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: 1px solid $success-color;
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
@@ -241,7 +260,7 @@ margin-bottom: 30px;
 @include grid-column-offset(1);
 padding-top: 30px;
 padding-bottom: 30px;
-border-bottom: 1px solid $secondary-color;
+border-bottom: 1px solid $success-color;
 margin-bottom: 30px;
 
 }
@@ -251,8 +270,6 @@ margin-bottom: 30px;
     h2 {
         text-align: center;
         width: 100%;
-        margin-top: 50px;
-        margin-bottom: 50px;
 
     }
 
@@ -260,33 +277,4 @@ margin-bottom: 30px;
     @include grid-column(10);
     @include grid-column-offset(1);
     }
-}
-
-.sermonslistContent.singleSermonPage h2 {
-     margin-top: 50px;
-     margin-bottom: 50px;
-}
-
-.sermonslistItem__title {
-    display: flex;
-    justify-content: space-between;
-    h3 {
-    font-size: 30px;
-    margin-bottom: 0;
-    flex-grow: 2;
- }
- ul.action__buttons {
-     list-style-type: none;
-     display: flex;
- }
- li a {
-    margin-bottom: 0;
-    margin-top: .4em;
-    display: block;
-    width: 40px;
- }
- li a i {
-    font-size: 30px;
-    margin-bottom: 0;
- }
 }

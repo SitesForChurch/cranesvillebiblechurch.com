@@ -1,17 +1,26 @@
+$foundation-palette: (
+  primary: #319827,
+  secondary: #5C3F23,
+  success: #3C6E71,
+  warning: #4B4E6D,
+  alert: #319827,
+);
+@include add-foundation-colors;
+
 header {
-    background: $dark-gray;
+    background: darken(#fff, 10%);
 }
 .infoBar {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    color: $white;
+    color: darken($subtle-color, 15%);
     display: flex;
     align-items: center;
 
     h1 {
     width: 367px;
-    height: 65px;
+    height: 80px;
     flex-grow: 2;
     @include breakpoint (725px down) {
         flex-grow:1;
@@ -21,12 +30,13 @@ header {
 
     h1 a {
     text-indent: -5000px;
-    background: url(http://storage.biblebaptistmattoon.org/media/logoblue.png) no-repeat center center;
+    background: url(../logo.png) no-repeat center center;
     width: 367px;
-    height: 65px;
+    height: 78px;
     line-height: 65px;
     display: block;
     margin-left: 20px;
+    margin-top: 4px;
     }
     .service-times {
         display: none;
@@ -45,7 +55,7 @@ header {
             font-size: 13px;
         }
         li span {
-            color: $main-color;
+            color: $primary-color;
             margin-left: 35px;
         }
     }
@@ -71,7 +81,7 @@ header {
     display: none;
     @include breakpoint (726px){
         display: block;
-         background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
+         background: $secondary-color;
     }
 
     ul.dropdown.menu {
@@ -82,32 +92,24 @@ header {
         margin-right: auto;
     }
     ul li a {
-        color: $dark-gray;
+        color: $white;
         font-size: 17px;
         font-weight: 600;
         font-family: $header-font-family;
     }
-
-.is-dropdown-submenu {
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    min-width: 200px;
-    z-index: 1;
-    background: #fefefe;
-    border: 1px solid #cacaca;
 }
 
+.MainNavigation ul li ul li a {
+    color: darken($subtle-color, 15%);
 }
 
 .MobileNavigation {
-    background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
+    background: $secondary-color;
     padding-right:30px;
     text-align: right;
 
     button {
-        color: $dark-gray;
+        color: $white;
         font-size: 30px;
         font-family: $header-font-family;
         line-height: 50px;
@@ -124,12 +126,4 @@ header {
 
 .off-canvas-content, .off-canvas-content {
     box-shadow: none;
-}
-
-.mobile-sidebar {
-    ul li {padding-left: 20px;}
-}
-
-.js-drilldown-back {
-  // ...
 }
