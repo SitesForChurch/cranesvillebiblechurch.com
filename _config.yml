@@ -1,11 +1,11 @@
 title: Cranesville Bible Church, Cranesville, PA
 email: "pastorryanhaydenl@gmail.com"
 description: > # this means to ignore newlines until "baseurl:"
-  Sitesfor.church makes affordable church websites built for the needs of the 90% of churches with less than 200 members.  
+  Sitesfor.church makes affordable church websites built for the needs of the 90% of churches with less than 200 members.
   You won't find a professional solution that is more affordable or easier to use.  We also are deliberate about giving jobs
   to Bible college students and other aspiring pastors.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://192.168.1.132.xip.io:3000/" # the base hostname & protocol for your site | Switch to "http://biblebaptistmattoon.org/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
+url: "http://cranesvillebiblechurch.pubstorm.site/" # the base hostname & protocol for your site | Switch to "http://cranesvillebiblechurch.pubstorm.site" Before running Storm Publish.  Afterwards change it back to http://localhost:3002/
 twitter_username: jekyllrb
 github_username:  jekyll
 default_header_image: "assets/default_header.jpg"
@@ -16,12 +16,12 @@ default_calendar_image: "assets/calendar_default.jpg"
 
 # Build settings
 markdown: kramdown
- 
+
 # Exclude
 exclude:
   - package.json
   - node_modules
-  - gulpfile.js 
+  - gulpfile.js
   - bower_components
 
 page_gen:
@@ -49,4 +49,3 @@ page_gen:
     template: 'event'
     name: 'event_name'
     dir: 'events'
-
